@@ -1,0 +1,6 @@
+{
+    "codeium.enableConfig": {
+        "*": false
+    },
+    "github.copilot.editor.enableAutoCompletions":false,
+}
