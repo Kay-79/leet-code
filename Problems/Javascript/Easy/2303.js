@@ -11,13 +11,9 @@ var calculateTax = function (brackets, income) {
             index = i;
             break;
         }
-        if (i == brackets.length - 1) index = i;
+        i === brackets.length - 1 ? (index = i) : {};
     }
-    console.log(index);
-    if (index == 0) {
-        if (income < brackets[0][0]) return (brackets[0][1] * income) / 100;
-        else return (brackets[0][0] * brackets[0][1]) / 100;
-    }
+    if (index === 0) return (income < brackets[0][0] ? brackets[0][1] * income : brackets[0][0] * brackets[0][1]) / 100;
     let result = 0;
     let cache = 0;
     for (let j = 0; j < index; j++) {
