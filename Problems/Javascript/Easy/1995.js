@@ -12,19 +12,10 @@ var countQuadruplets = function (nums) {
         if (nums[a] + nums[b] + nums[c] == nums[d]) {
             result++;
         }
-        if (
-            a == nums.length - 4 &&
-            b == nums.length - 3 &&
-            c == nums.length - 2 &&
-            d == nums.length - 1
-        ) {
+        if (a == nums.length - 4 && b == nums.length - 3 && c == nums.length - 2 && d == nums.length - 1) {
             break;
         }
-        if (
-            b == nums.length - 3 &&
-            c == nums.length - 2 &&
-            d == nums.length - 1
-        ) {
+        if (b == nums.length - 3 && c == nums.length - 2 && d == nums.length - 1) {
             a = a + 1;
             b = a + 1;
             c = b + 1;

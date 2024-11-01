@@ -16,9 +16,7 @@ const maxScore = (t) => {
                 }
             }
         }
-        countOne + countZero > result
-            ? (result = countOne + countZero)
-            : (result = result);
+        countOne + countZero > result ? (result = countOne + countZero) : (result = result);
         indexSplit++;
     }
     return result;
