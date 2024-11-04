@@ -7,10 +7,11 @@ var compressedString = function (word) {
     let result = "";
     for (let i = 0; i < words.length; i++) {
         let count = 1;
+        let cache = words[i];
         for (let j = i + 1; j < words.length; j++) {
-            if (words[i] === words[j]) {
+            if (cache === words[j]) {
                 if (count >= 9) {
-                    result += count + words[i];
+                    result += count + cache;
                     count = 1;
                     i++;
                 } else {
@@ -20,12 +21,12 @@ var compressedString = function (word) {
             } else {
                 if (count > 1) {
                 } else count = 1;
-                result += count + words[i];
-                words[i] = words[j];
+                result += count + cache;
+                cache = words[j];
                 break;
             }
         }
-        if (i === words.length - 1) result += count + words[i];
+        if (i === words.length - 1) result += count + cache;
     }
     return result;
 };
