@@ -26,6 +26,14 @@ var maxSubsequence = function (nums, k) {
     return nums;
 };
 
+var maxSubsequence = function (nums, k) {
+    let indexedNums = nums.map((num, idx) => [num, idx]);
+    indexedNums.sort((a, b) => b[0] - a[0]);
+    let topKElements = indexedNums.slice(0, k);
+    topKElements.sort((a, b) => a[1] - b[1]);
+    return topKElements.map((item) => item[0]);
+};
+
 nums = [33, -27, -9, -83, 48];
 k = 2;
 
