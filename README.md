@@ -14,7 +14,7 @@
 
 ## 🧩 Directory Structure
 
--   `Problems/[difficult]`: Contains the solutions to the problems.
+-   `Problems/[status]/[difficult]`: Contains the solutions to the problems.
 -   `README.md`: This document.
 
 ## 📈 Progress Tracking
