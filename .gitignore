@@ -3,3 +3,4 @@ src/main.test.js
 target/
 node_modules/
 .DS_Store
+test*.*
