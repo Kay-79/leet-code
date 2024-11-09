@@ -22,6 +22,14 @@
 -   Daily progress will be tracked in this repo.
 -   The goal is to stay consistent and miss no days!
 
+## 🚀 Setup
+
+### Rust
+
+-   Install Rust by following the instructions on the [official website](https://www.rust-lang.org/tools/install).
+-   Run create main.rs in src folder depending on main.example.rs file.
+-   Run `cargo test -- --nocapture` to run the tests.
+
 ## 🤝 Contributions
 
 If you have suggestions or would like to discuss solutions, feel free to open an "Issue" or "Pull Request"!
