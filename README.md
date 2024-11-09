@@ -32,7 +32,7 @@
 
 ### JavaScript
 
--   Install [Bun](https://bun.sh/) by following the instructions on the [official website](https://bun.sh/install).
+-   Install [Bun](https://bun.sh/) by following the instructions on the [official website](https://bun.sh/docs/installation).
 -   Create main.test.js in src folder depending on main.test.example.js file.
 -   Run `bun install` to install dependencies.
 -   Run `bun test` to run the tests.
