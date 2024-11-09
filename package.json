@@ -1,0 +1,17 @@
+{
+    "name": "leet-code",
+    "module": "index.ts",
+    "type": "module",
+    "devDependencies": {
+        "@types/bun": "latest"
+    },
+    "peerDependencies": {
+        "typescript": "^5.0.0"
+    },
+    "scripts": {
+        "test": "bun ./src/main.test.js"
+    },
+    "dependencies": {
+        "jest": "^29.7.0"
+    }
+}

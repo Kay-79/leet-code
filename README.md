@@ -27,8 +27,15 @@
 ### Rust
 
 -   Install Rust by following the instructions on the [official website](https://www.rust-lang.org/tools/install).
--   Run create main.rs in src folder depending on main.example.rs file.
+-   Create main.rs in src folder depending on main.example.rs file.
 -   Run `cargo test -- --nocapture` to run the tests.
+
+### JavaScript
+
+-   Install [Bun](https://bun.sh/) by following the instructions on the [official website](https://bun.sh/install).
+-   Create main.test.js in src folder depending on main.test.example.js file.
+-   Run `bun install` to install dependencies.
+-   Run `bun test` to run the tests.
 
 ## 🤝 Contributions
 
