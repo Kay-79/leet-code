@@ -1,5 +1,6 @@
 src/main.rs
 src/main.test.js
+src/main.test.ts
 target/
 node_modules/
 .DS_Store

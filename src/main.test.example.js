@@ -1,47 +1,27 @@
-const reverseOnlyLetters = require("./main"); // Giả sử hàm nằm trong tệp main.js
-
-describe("reverseOnlyLetters", () => {
-    test("should reverse letters only and keep non-letters in place", () => {
-        expect(reverseOnlyLetters("ab-cd")).toBe("dc-ba");
-        expect(reverseOnlyLetters("a-bC-dEf-ghIj")).toBe("j-Ih-gfE-dCba");
-        expect(reverseOnlyLetters("Test-case")).toBe("esac-tsTe");
-        expect(reverseOnlyLetters("123-ab-")).toBe("123-ba-");
-    });
-
-    test("should handle empty string", () => {
-        expect(reverseOnlyLetters("")).toBe("");
-    });
-
-    test("should handle string with no letters", () => {
-        expect(reverseOnlyLetters("123-456")).toBe("123-456");
-    });
-
-    test("should handle single letter", () => {
-        expect(reverseOnlyLetters("a")).toBe("a");
-    });
-
-    test("should handle string with all special characters", () => {
-        expect(reverseOnlyLetters("---")).toBe("---");
+describe("Javascript test:", () => {
+    test("Testing", () => {
+        let hours = [0, 1, 2, 3, 4];
+        let target = 2;
+        let expected_output = 3;
+        expect(numberOfEmployeesWhoMetTarget(hours, target)).toEqual(expected_output);
     });
 });
 
 /**
- * @param {string} s
- * @return {string}
+ * @param {number[]} hours
+ * @param {number} target
+ * @return {number}
  */
-var reverseOnlyLetters = function (s) {
-    let arr = s.split("");
+var numberOfEmployeesWhoMetTarget = function (hours, target) {
+    let result = 0;
     let l = 0;
-    let r = s.length - 1;
+    let r = hours.length - 1;
     while (l < r) {
-        while (l < r && !/[a-zA-Z]/.test(arr[l])) l++;
-        while (l < r && !/[a-zA-Z]/.test(arr[r])) r--;
-        let temp = arr[l];
-        arr[l] = arr[r];
-        arr[r] = temp;
+        if (hours[l] >= target) result++;
+        if (hours[r] >= target) result++;
         l++;
         r--;
     }
-
-    return arr.join("");
+    if (l === r && hours[l] >= target) result++;
+    return result;
 };

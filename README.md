@@ -30,12 +30,19 @@
 -   Create main.rs in src folder depending on main.example.rs file.
 -   Run `cargo test -- --nocapture` to run the tests.
 
+### TypeScript
+
+-   Install [Bun](https://bun.sh/) by following the instructions on the [official website](https://bun.sh/docs/installation).
+-   Create main.test.ts in src folder depending on main.test.example.ts file.
+-   Run `bun install` to install dependencies.
+-   Run `bun test .ts` to run the tests.
+
 ### JavaScript
 
 -   Install [Bun](https://bun.sh/) by following the instructions on the [official website](https://bun.sh/docs/installation).
 -   Create main.test.js in src folder depending on main.test.example.js file.
 -   Run `bun install` to install dependencies.
--   Run `bun test` to run the tests.
+-   Run `bun test .js` to run the tests.
 
 ## 🤝 Contributions
 

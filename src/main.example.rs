@@ -5,45 +5,32 @@ mod tests {
 
     #[test]
     fn test_case() {
-        let grid = vec![
-            vec![3, 8, 1, 9],
-            vec![19, 7, 2, 5],
-            vec![4, 6, 11, 10],
-            vec![12, 0, 21, 13],
-        ];
-        let k = 4;
-        let expected_output = vec![
-            vec![12, 0, 21, 13],
-            vec![3, 8, 1, 9],
-            vec![19, 7, 2, 5],
-            vec![4, 6, 11, 10],
-        ];
-
-        assert_eq!(shift_grid(grid, k), expected_output);
+        let hours = vec![0, 1, 2, 3, 4];
+        let target = 2;
+        let expected_output = 3;
+        assert_eq!(
+            number_of_employees_who_met_target(hours, target),
+            expected_output
+        );
     }
 }
 
-pub fn shift_grid(grid: Vec<Vec<i32>>, k: i32) -> Vec<Vec<i32>> {
-    if grid.len() == 1 && grid[0].len() == 1 {
-        return grid;
+pub fn number_of_employees_who_met_target(hours: Vec<i32>, target: i32) -> i32 {
+    let mut l = 0;
+    let mut r = hours.len() - 1;
+    let mut result = 0;
+    while l < r {
+        if hours[l] >= target {
+            result += 1;
+        }
+        if hours[r] >= target {
+            result += 1;
+        }
+        l += 1;
+        r -= 1;
     }
-    let mut cache = vec![];
-    for row in &grid {
-        cache.extend_from_slice(row);
-    }
-    let cache_len = cache.len();
-    let mut k = k as usize;
-    if k > cache_len {
-        k = k % cache_len;
-    }
-    let mut nums_shift = cache[cache_len - k..].to_vec();
-    nums_shift.extend_from_slice(&cache);
-    let mut result: Vec<Vec<i32>> = vec![];
-    let row_len = grid[0].len();
-    let mut j = 0;
-    while j < nums_shift.len() - k {
-        result.push(nums_shift[j..j + row_len].to_vec());
-        j += row_len;
-    }
+    if r == l && hours[l] >= target {
+        result += 1
+    };
     result
 }
