@@ -28,7 +28,7 @@
 
 -   Install Rust by following the instructions on the [official website](https://www.rust-lang.org/tools/install).
 -   Create main.rs in src folder depending on main.example.rs file.
--   Run `cargo test -- --nocapture` to run the tests.
+-   Run `cargo test` to run the tests.
 
 ### TypeScript
 
