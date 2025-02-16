@@ -18,5 +18,5 @@ function categorizeBox(length: number, width: number, height: number, mass: numb
     if (isBulky && isHeavy) return "Both";
     if (isBulky) return "Bulky";
     if (isHeavy) return "Heavy";
-    return "Neither"
+    return "Neither";
 }

@@ -6,7 +6,7 @@ describe("Typescript test:", () => {
 
 function generateParenthesis(n: number): string[] {
     let result: string[] = [];
-    
+
     function recusion(opening: number, closing: number, str: string) {
         if (!opening && !closing) {
             result.push(str);

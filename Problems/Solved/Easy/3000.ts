@@ -9,7 +9,7 @@ describe("Typescript test:", () => {
                 [9, 2],
                 [3, 5],
                 [3, 5],
-            ])
+            ]),
         ).toEqual(20);
     });
 });

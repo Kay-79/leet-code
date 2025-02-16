@@ -1,6 +1,6 @@
 describe("Typescript test:", () => {
     test("Testing", () => {
-        expect(countPrefixes(["a","b","c","ab","bc","abc"], "abc")).toEqual(3);
+        expect(countPrefixes(["a", "b", "c", "ab", "bc", "abc"], "abc")).toEqual(3);
     });
 });
 

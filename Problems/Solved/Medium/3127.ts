@@ -5,14 +5,14 @@ describe("Typescript test:", () => {
                 ["B", "W", "B"],
                 ["B", "W", "W"],
                 ["B", "W", "B"],
-            ])
+            ]),
         ).toEqual(true);
         expect(
             canMakeSquare([
                 ["B", "W", "B"],
                 ["W", "B", "W"],
                 ["B", "W", "B"],
-            ])
+            ]),
         ).toEqual(false);
     });
 });

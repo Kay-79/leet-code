@@ -5,7 +5,7 @@ describe("Typescript test:", () => {
                 [3, 6],
                 [1, 5],
                 [4, 7],
-            ])
+            ]),
         ).toEqual(7);
     });
 });

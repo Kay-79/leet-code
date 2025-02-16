@@ -7,16 +7,8 @@ var haveConflict = function (event1, event2) {
         const time2 = event2[i].split(":");
         driffTime2.push(Number(time2[0]) * 60 + Number(time2[1]));
     }
-    return (
-        (driffTime1[0] <= driffTime2[0] && driffTime2[0] <= driffTime1[1]) ||
-        (driffTime1[0] <= driffTime2[1] && driffTime2[1] <= driffTime1[1]) ||
-        (driffTime1[0] >= driffTime2[0] && driffTime1[1] <= driffTime2[1])
-    );
+    return (driffTime1[0] <= driffTime2[0] && driffTime2[0] <= driffTime1[1]) || (driffTime1[0] <= driffTime2[1] && driffTime2[1] <= driffTime1[1]) || (driffTime1[0] >= driffTime2[0] && driffTime1[1] <= driffTime2[1]);
 };
 var haveConflict = function (event1, event2) {
-    return (
-        (event1[0] <= event2[0] && event2[0] <= event1[1]) ||
-        (event1[0] <= event2[1] && event2[1] <= event1[1]) ||
-        (event1[0] >= event2[0] && event1[1] <= event2[1])
-    );
+    return (event1[0] <= event2[0] && event2[0] <= event1[1]) || (event1[0] <= event2[1] && event2[1] <= event1[1]) || (event1[0] >= event2[0] && event1[1] <= event2[1]);
 };
