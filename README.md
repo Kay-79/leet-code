@@ -14,7 +14,7 @@
 
 ## 🧩 Directory Structure
 
--   `Problems/[status]/[difficult]`: Contains the solutions to the problems.
+-   `Problems/[status]`: Contains the solutions to the problems.
 -   `README.md`: This document.
 
 ## 📈 Progress Tracking
@@ -29,20 +29,12 @@
 -   Install Rust by following the instructions on the [official website](https://www.rust-lang.org/tools/install).
 -   Create main.rs in src folder depending on main.example.rs file.
 -   Run `cargo test` to run the tests.
-
-### TypeScript
-
--   Install [Bun](https://bun.sh/) by following the instructions on the [official website](https://bun.sh/docs/installation).
--   Create main.test.ts in src folder depending on main.test.example.ts file.
--   Run `bun install` to install dependencies.
--   Run `bun test .ts` to run the tests.
-
-### JavaScript
+### TypeScript & JavaScript
 
 -   Install [Bun](https://bun.sh/) by following the instructions on the [official website](https://bun.sh/docs/installation).
--   Create main.test.js in src folder depending on main.test.example.js file.
+-   Create `main.test.ts` or `main.test.js` in the `src` folder, based on the corresponding example file.
 -   Run `bun install` to install dependencies.
--   Run `bun test .js` to run the tests.
+-   Run `bun test .ts` or `bun test .js` to run the tests.
 
 ## 🤝 Contributions
 
