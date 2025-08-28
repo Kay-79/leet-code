@@ -1,10 +1,13 @@
 # LeetCode Daily Challenge
 
-🎯 **Goal**: Solve at least one LeetCode problem every day and commit the solution to this repository. This is my journey to improve my algorithmic skills and programming ability day by day.
+<div align="center">
+  <h1>🏆 LeetCode Statistics</h1>
+  <img src="https://leetcard.jacoblin.cool/Kay-79?theme=dark&font=Noto%20Sans&ext=activity" />
+</div>
 
-## 📅 Overview
+## 🎯 About This Repository
 
--   **Language**: JavaScript or any other language I'm comfortable with.
+-   **Language**: Feel free to use any programming language.
 -   **Problem Types**: Common algorithm topics on LeetCode like arrays, strings, trees, graphs, dynamic programming, greedy algorithms, etc.
 -   **Objective**: Tackle problems of varying difficulty, from easy to hard, progressively enhancing analytical and problem-solving skills.
 
@@ -22,20 +25,37 @@
 -   Daily progress will be tracked in this repo.
 -   The goal is to stay consistent and miss no days!
 
-## 🚀 Setup
+### Prerequisites
+- [Bun](https://bun.sh/) for TypeScript/JavaScript
+- [Rust](https://www.rust-lang.org/tools/install) for Rust solutions
 
-### Rust
+### Running Tests
 
--   Install Rust by following the instructions on the [official website](https://www.rust-lang.org/tools/install).
--   Create main.rs in src folder depending on main.example.rs file.
--   Run `cargo test` to run the tests.
-### TypeScript & JavaScript
+#### TypeScript & JavaScript
+```bash
+bun install
+bun test .ts    # For TypeScript
+bun test .js    # For JavaScript
+```
 
--   Install [Bun](https://bun.sh/) by following the instructions on the [official website](https://bun.sh/docs/installation).
--   Create `main.test.ts` or `main.test.js` in the `src` folder, based on the corresponding example file.
--   Run `bun install` to install dependencies.
--   Run `bun test .ts` or `bun test .js` to run the tests.
+#### Rust
+```bash
+cargo test
+```
 
-## 🤝 Contributions
+## 🤝 Contributing
 
-If you have suggestions or would like to discuss solutions, feel free to open an "Issue" or "Pull Request"!
+Feel free to:
+- Open issues for suggestions
+- Submit pull requests for improvements
+- Share alternative solutions
+- Report bugs or problems
+
+## 📝 License
+
+This repository is for educational purposes. Feel free to use the code for learning.
+
+---
+<div align="center">
+  <i>⭐ Star this repository if you find it helpful!</i>
+</div>
