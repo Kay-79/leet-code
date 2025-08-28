@@ -2,7 +2,7 @@
 
 <div align="center">
   <h1>🏆 LeetCode Statistics</h1>
-  <img src="https://leetcard.jacoblin.cool/Kay-79?theme=dark&font=Noto%20Sans&ext=activity" />
+  <img src="https://leetcard.jacoblin.cool/Kay-79?theme=radical&font=Press%20Start%202P&ext=height=380&border=2&radius=0&animation=false" />
 </div>
 
 ## 🎯 About This Repository
@@ -33,7 +33,6 @@
 
 #### TypeScript & JavaScript
 ```bash
-bun install
 bun test .ts    # For TypeScript
 bun test .js    # For JavaScript
 ```
