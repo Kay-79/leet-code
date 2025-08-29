@@ -1,5 +1,3 @@
-import type { forEachChild } from "typescript";
-
 describe("Typescript test:", () => {
     test("Testing", () => {
         const n = 3,
