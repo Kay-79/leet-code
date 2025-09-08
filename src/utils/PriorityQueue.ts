@@ -11,8 +11,27 @@ export class PriorityQueue<T> {
         return this.data.length;
     }
 
-    peek(): T | undefined {
+    enqueue(value: T): void {
+        this.data.push(value);
+        this.bubbleUp(this.data.length - 1);
+    }
+
+    dequeue(): T {
+        const top = this.data[0];
+        const last = this.data.pop();
+        if (!this.isEmpty() && last !== undefined) {
+            this.data[0] = last;
+            this.bubbleDown(0);
+        }
+        return top;
+    }
+
+    front(): T {
         return this.data[0];
+    }
+
+    isEmpty(): boolean {
+        return this.data.length === 0;
     }
 
     push(item: T): void {
