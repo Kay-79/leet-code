@@ -2,6 +2,9 @@ src/main.rs
 src/main.test.js
 src/main.test.ts
 src/main.test.sql
+src/sql/leetcode.db
+src/sql/init.sql
+src/sql/main.test.sql
 target/
 node_modules/
 .DS_Store

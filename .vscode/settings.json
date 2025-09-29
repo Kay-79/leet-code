@@ -4,5 +4,15 @@
     },
     "github.copilot.enable": {
         "*": false
-    }
+    },
+    "sqltools.useNodeRuntime": true,
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "leecode",
+            "group": "leecode",
+            "database": "./src/sql/leetcode.db"
+        }
+    ]
 }
