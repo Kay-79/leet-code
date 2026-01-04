@@ -1,36 +1,37 @@
-fn main() {}
+pub struct Solution;
+
+impl Solution {
+    pub fn number_of_special_chars(word: String) -> i32 {
+        let mut res = 0;
+        for i in 65..=90 {
+            let char_upper = (i as u8) as char;
+            let char_lower = ((i + 32) as u8) as char;
+            if word.contains(char_upper) && word.contains(char_lower) {
+                res += 1;
+            }
+        }
+        res
+    }
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
 
     #[test]
-    fn test_case() {
-        let hours = vec![0, 1, 2, 3, 4];
-        let target = 2;
+    fn test_case_1() {
+        let word = String::from("aaAbcBC");
         let expected_output = 3;
-        assert_eq!(
-            number_of_employees_who_met_target(hours, target),
-            expected_output
-        );
+
+        assert_eq!(Solution::number_of_special_chars(word), expected_output);
+    }
+
+    #[test]
+    fn test_case_2() {
+        let word = String::from("abc");
+        let expected_output = 0;
+        assert_eq!(Solution::number_of_special_chars(word), expected_output);
     }
 }
 
-pub fn number_of_employees_who_met_target(hours: Vec<i32>, target: i32) -> i32 {
-    let mut l = 0;
-    let mut r = hours.len() - 1;
-    let mut result = 0;
-    while l < r {
-        if hours[l] >= target {
-            result += 1;
-        }
-        if hours[r] >= target {
-            result += 1;
-        }
-        l += 1;
-        r -= 1;
-    }
-    if r == l && hours[l] >= target {
-        result += 1
-    };
-    result
-}
+fn main() {}
