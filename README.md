@@ -17,7 +17,7 @@
 
 ## 🧩 Directory Structure
 
--   `Problems/[status]`: Contains the solutions to the problems.
+-   `Problems`: Contains the solutions to the problems.
 -   `README.md`: This document.
 
 ## 📈 Progress Tracking
@@ -41,20 +41,22 @@ bun test .js    # For JavaScript
 ```bash
 cargo test
 ```
+## 📊 Monthly Stats
 
-## 🤝 Contributing
+<!-- STATS:START -->
+**Updated**: 2026-01-07
 
-Feel free to:
-- Open issues for suggestions
-- Submit pull requests for improvements
-- Share alternative solutions
-- Report bugs or problems
+- **Solved problems (unique IDs)**: 189
+- **Files counted**: 206
+- **Languages**:
+  - TypeScript: 110
+  - JavaScript: 70
+  - Rust: 22
+  - SQL: 3
+  - Shell: 1
 
-## 📝 License
+<!-- STATS:END -->
 
-This repository is for educational purposes. Feel free to use the code for learning.
 
----
-<div align="center">
-  <i>⭐ Star this repository if you find it helpful!</i>
-</div>
+
+

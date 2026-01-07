@@ -2,6 +2,9 @@
     "name": "leet-code",
     "module": "index.ts",
     "type": "module",
+    "scripts": {
+        "stats": "node scripts/generate_stats.cjs"
+    },
     "devDependencies": {
         "@types/bun": "latest",
         "@types/jest": "^29.5.14"
