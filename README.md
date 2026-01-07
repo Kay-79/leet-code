@@ -46,8 +46,7 @@ cargo test
 <!-- STATS:START -->
 **Updated**: 2026-01-07
 
-- **Solved problems (unique IDs)**: 189
-- **Files counted**: 206
+- **Total**: 206
 - **Languages**:
   - TypeScript: 110
   - JavaScript: 70
