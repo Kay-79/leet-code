@@ -51,7 +51,7 @@ function buildStatsMd(summary) {
             return `  - ${name}: ${v}`;
         })
         .join("\n");
-    return `<!-- STATS:START -->\n**Updated**: ${now}\n\n- **Solved problems (unique IDs)**: ${summary.solved}\n- **Files counted**: ${summary.totalFiles}\n- **Languages**:\n${langs}\n\n<!-- STATS:END -->\n`;
+    return `<!-- STATS:START -->\n**Updated**: ${now}\n\n- **Total**: ${summary.totalFiles}\n- **Languages**:\n${langs}\n\n<!-- STATS:END -->\n`;
 }
 
 function updateReadme(statsMd) {
